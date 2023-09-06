@@ -3,7 +3,7 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher.storage import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from config import token
-from parsing import *  # Предполагается, что у вас есть функции USD_KGS, EURO_KGS, RUB_KGS, KZT_KGS
+from parsing import *  
 import logging
 
 bot = Bot(token=token)
