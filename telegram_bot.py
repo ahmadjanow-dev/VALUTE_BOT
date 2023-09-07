@@ -91,6 +91,8 @@ async def user_money(message: types.Message, state: FSMContext):
         await message.answer(f"Вы даете {user_money} тенге, получаете {user_update_money} сом")
 
     await state.finish()
+    
+    await message.answer('спасиба',reply_markup=direction_keyboard)
 
     
 executor.start_polling(dp, skip_updates=True)
